@@ -3,19 +3,29 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import config from "./deno.json" assert { type: "json" }
-import * as $0 from "./routes/[name].tsx"
-import * as $1 from "./routes/api/joke.ts"
-import * as $2 from "./routes/index.tsx"
-import * as $$0 from "./islands/Counter.tsx"
+import * as $0 from "./routes/_404.jsx"
+import * as $1 from "./routes/_500.jsx"
+import * as $2 from "./routes/_middleware.js"
+import * as $3 from "./routes/index.jsx"
+import * as $4 from "./routes/sitemap.xml.js"
+import * as $5 from "./routes/uploads/[file].js"
+import * as $$0 from "./islands/SingleImagePopup.jsx"
+import * as $$1 from "./islands/Slideshow.tsx"
+import * as $$2 from "./islands/ThumbnailGallery.tsx"
 
 const manifest = {
   routes: {
-    "./routes/[name].tsx": $0,
-    "./routes/api/joke.ts": $1,
-    "./routes/index.tsx": $2,
+    "./routes/_404.jsx": $0,
+    "./routes/_500.jsx": $1,
+    "./routes/_middleware.js": $2,
+    "./routes/index.jsx": $3,
+    "./routes/sitemap.xml.js": $4,
+    "./routes/uploads/[file].js": $5,
   },
   islands: {
-    "./islands/Counter.tsx": $$0,
+    "./islands/SingleImagePopup.jsx": $$0,
+    "./islands/Slideshow.tsx": $$1,
+    "./islands/ThumbnailGallery.tsx": $$2,
   },
   baseUrl: import.meta.url,
   config,
