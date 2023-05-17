@@ -13,7 +13,7 @@ export default function Page500(props) {
   return (
     <>
       <Head>
-        <title>Sushi J Express | Server Error</title>
+        <title>Seaside Pharmacy | Server Error</title>
       </Head>
       <Layout data={props}>
         <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white">

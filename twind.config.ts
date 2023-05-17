@@ -27,7 +27,6 @@ export default {
       green: "rgb(160,235,177)",
       blue: "rgb(0,190,211)",
       indigo: "rgb(0,153,212)",
-      // blue: "rgb(0,153,212)",
       violet: "rgb(108, 73, 136)",
       grey: colors.coolGray,
       dark: "rgb(15,15,15)",

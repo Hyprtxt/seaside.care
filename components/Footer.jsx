@@ -1,5 +1,4 @@
 import BrandGithub from "$icons/brand-github.tsx"
-import { isSushiOpenPhrase } from "@/utils/mod.js"
 
 export default function Footer({ children, active, hits = 0 }) {
   const menus = [
@@ -7,15 +6,22 @@ export default function Footer({ children, active, hits = 0 }) {
       title: "Pages",
       children: [
         { name: "Home", href: "/" },
-        { name: "Menu", href: "/menu" },
+        // { name: "Menu", href: "/menu" },
         // { name: "Order", href: "/order" },
       ],
     },
     {
       title: "Community",
       children: [
-        // { name: "GitHub", href: "https://github.com/hyprtxt" },
-        { name: "Facebook", href: "https://www.facebook.com/SushiJExpress/" },
+        {
+          name: "Facebook",
+          href:
+            "https://www.facebook.com/people/Seaside-Pharmacy/100070179091084",
+        },
+        {
+          name: "Yelp",
+          href: "https://www.yelp.com/biz/seaside-pharmacy-revere",
+        },
       ],
     },
   ]
@@ -32,20 +38,17 @@ export default function Footer({ children, active, hits = 0 }) {
             class="font-bold text-2xl"
             property="name"
           >
-            Sushi <span class="text-red">J</span> Express
+            Seaside Pharmacy
           </div>
         </div>
         <div>
-          <a href="https://goo.gl/maps/V5GUNWqMwZ6JSoa98">
+          <a href="https://goo.gl/maps/ZuBSQdKqEavcKrgf9">
             Location & Directions
           </a>
         </div>
         <div property="telephone">
-          <a href="tel:+19287759323">(928) 775-9323</a>
+          <a href="tel:+17812846525">(781) 284-6525</a>
           {" "}
-        </div>
-        <div>
-          {isSushiOpenPhrase()}
         </div>
       </div>
 
@@ -69,17 +72,16 @@ export default function Footer({ children, active, hits = 0 }) {
 
       <div class="space-y-2">
         <div class="text-xs">
-          Copyright © Sushi J Express<br />
-          <a href="https://hyprtxt.dev">Coded in Prescott Valley</a>.
+          Copyright © Seaside Pharmacy<br />
+          {/* <a href="https://hyprtxt.dev">Coded in Arizona</a>. */}
         </div>
         <a
-          href="https://github.com/Hyprtxt/sushij.express"
+          href="https://github.com/Hyprtxt/seaside.care"
           class="inline-block hover:text-black"
           aria-label="Github Icon"
         >
           <BrandGithub />
         </a>
-        {hits > 0 ? <p>Hits: {hits}</p> : <></>}
       </div>
       {children}
     </div>

@@ -17,20 +17,6 @@ Deno.test(
       assertEquals(response.status(), Status.OK)
     })
 
-    await t.step("The menu page should work", async () => {
-      const response = await page.goto(`${BASE_URL}/menu`, {
-        waitUntil: "networkidle2",
-      })
-      assertEquals(response.status(), Status.OK)
-    })
-
-    await t.step("The order page should work", async () => {
-      const response = await page.goto(`${BASE_URL}/order`, {
-        waitUntil: "networkidle2",
-      })
-      assertEquals(response.status(), Status.OK)
-    })
-
     await t.step("The 404 page should 404", async () => {
       const response = await page.goto(`${BASE_URL}/404`, {
         waitUntil: "networkidle2",

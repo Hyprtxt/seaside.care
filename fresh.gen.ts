@@ -8,10 +8,6 @@ import * as $1 from "./routes/_500.jsx"
 import * as $2 from "./routes/_middleware.js"
 import * as $3 from "./routes/index.jsx"
 import * as $4 from "./routes/sitemap.xml.js"
-import * as $5 from "./routes/uploads/[file].js"
-import * as $$0 from "./islands/SingleImagePopup.jsx"
-import * as $$1 from "./islands/Slideshow.tsx"
-import * as $$2 from "./islands/ThumbnailGallery.tsx"
 
 const manifest = {
   routes: {
@@ -20,13 +16,8 @@ const manifest = {
     "./routes/_middleware.js": $2,
     "./routes/index.jsx": $3,
     "./routes/sitemap.xml.js": $4,
-    "./routes/uploads/[file].js": $5,
   },
-  islands: {
-    "./islands/SingleImagePopup.jsx": $$0,
-    "./islands/Slideshow.tsx": $$1,
-    "./islands/ThumbnailGallery.tsx": $$2,
-  },
+  islands: {},
   baseUrl: import.meta.url,
   config,
 }

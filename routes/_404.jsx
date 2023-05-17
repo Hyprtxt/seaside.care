@@ -5,7 +5,7 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>Sushi J Express | 404 Error Page</title>
+        <title>Seaside Pharmacy | 404 Error Page</title>
       </Head>
       <Layout data={props}>
         <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white">

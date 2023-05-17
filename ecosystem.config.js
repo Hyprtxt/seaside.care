@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    name: "sushij.express",
+    name: "seaside.care",
     script: "deno task run",
   }],
 }

@@ -9,27 +9,15 @@ export async function handler(req, ctx) {
   const { pathname } = new URL(req.url)
   const withSession = [
     "/",
-    "/menu",
-    "/order",
+    // "/menu",
+    // "/order",
   ]
   if (
-    withSession.includes(pathname) ||
-    pathname.startsWith("/pages/")
+    withSession.includes(pathname)
+    // || pathname.startsWith("/pages/")
   ) {
     ctx.BASE_URL = BASE_URL
     ctx.DENO_ENV = DENO_ENV
-    const kv = await Deno.openKv()
-
-    const key = ["hits"]
-    await kv.atomic().mutate({
-      type: "sum",
-      key,
-      value: new Deno.KvU64(1n),
-    }).commit()
-
-    // Read back this key.
-    const v = await kv.get(key)
-    ctx.hits = v.value.value
   }
   const resp = await ctx.next()
   const now = Date.now()

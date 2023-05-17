@@ -1,6 +1,7 @@
 import { Head } from "$fresh/runtime.ts"
-import { tw } from "twind"
+// import { tw } from "twind"
 import { animation, apply, css, keyframes, theme } from "twind/css"
+import Layout from "@/components/Layout.jsx"
 
 // ${animation("300ms ease-in-out 1", fadeIn)}
 
@@ -79,7 +80,6 @@ export default function Home() {
         <title>Seaside Pharmacy</title>
         <SchemaORG />
       </Head>
-      <div class={tw`${globalStyles}`}></div>
       <div class="p-8 mx-auto text-center max-w-sm my-5 bg-white border-indigo border-4">
         <h2
           class="font-lora uppercase font-bold relative mb-2"
@@ -92,9 +92,15 @@ export default function Home() {
         </h2>
         <a href="tel:781-284-6525">781-284-6525</a>
         <p>Located in Revere, Massachusetts</p>
-        <a href="https://goo.gl/maps/ZuBSQdKqEavcKrgf9?coh=178571&entry=tt">
+        <a href="https://goo.gl/maps/ZuBSQdKqEavcKrgf9">
           Click here to visit us on Google Maps
         </a>
+      </div>
+      <div class="hidden">
+        <Layout>
+          <section class="bg-white mx-auto max-w-screen-lg py-6 px-8 gap-4">
+          </section>
+        </Layout>
       </div>
     </>
   )
