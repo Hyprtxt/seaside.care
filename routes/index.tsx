@@ -1,8 +1,39 @@
-import { Head } from "$fresh/runtime.ts";
-import { tw } from "twind";
-import { animation, apply, css, keyframes, theme } from "twind/css";
+import { Head } from "$fresh/runtime.ts"
+import { tw } from "twind"
+import { animation, apply, css, keyframes, theme } from "twind/css"
 
 // ${animation("300ms ease-in-out 1", fadeIn)}
+
+const SchemaORG = () => {
+  const Schema = {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Seaside Pharmacy",
+    "description": "For your Pharmacy, Lottery and Everyday needs",
+    "openingHours": [
+      "Mo-Fr 09:00-19:00",
+      "Sa 09:00-17:00",
+    ],
+    "telephone": "+17812846525",
+    "department": {
+      "@type": "Pharmacy",
+      "name": "Seaside Pharmacy",
+      "description": "The on duty pharmacist is here to care for the community",
+      "openingHours": [
+        "Mo-Fr 09:00-19:00",
+        "Sa 09:00-17:00",
+      ],
+      "telephone": "+17812846525",
+    },
+  }
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(Schema, null, 2) }}
+    >
+    </script>
+  )
+}
 
 export const fadeIn = keyframes({
   "0%": {
@@ -11,7 +42,7 @@ export const fadeIn = keyframes({
   "100%": {
     opacity: 1,
   },
-});
+})
 
 export const globalStyles = css({
   ":global": {
@@ -39,13 +70,14 @@ export const globalStyles = css({
     ".logo-gradient":
       apply`bg-clip-text text-transparent bg-gradient-to-b from-indigo via-blue to-violet`,
   },
-});
+})
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Seaside Pharmacy</title>
+        <SchemaORG />
       </Head>
       <div class={tw`${globalStyles}`}></div>
       <div class="p-8 mx-auto text-center max-w-sm my-5 bg-white border-indigo border-4">
@@ -65,5 +97,5 @@ export default function Home() {
         </a>
       </div>
     </>
-  );
+  )
 }
