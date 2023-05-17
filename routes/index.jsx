@@ -78,7 +78,6 @@ export default function Home() {
     <>
       <Head>
         <title>Seaside Pharmacy</title>
-        <SchemaORG />
       </Head>
       <div class="p-8 mx-auto text-center max-w-sm my-5 bg-white border-indigo border-4">
         <h2
