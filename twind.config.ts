@@ -1,5 +1,5 @@
 import { Options } from "$fresh/plugins/twind.ts";
-import * as colors from "twind/colors"
+import * as colors from "twind/colors";
 
 export default {
   selfURL: import.meta.url,
@@ -24,7 +24,10 @@ export default {
       "lora": ['"Lora"', "serif"],
     },
     colors: {
-      blue: "rgb(0,153,212)",
+      green: "rgb(160,235,177)",
+      blue: "rgb(0,190,211)",
+      indigo: "rgb(0,153,212)",
+      // blue: "rgb(0,153,212)",
       violet: "rgb(108, 73, 136)",
       grey: colors.coolGray,
       dark: "rgb(15,15,15)",
