@@ -5,10 +5,13 @@ export default {
   selfURL: import.meta.url,
   preflight: {
     "@import":
-      "https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap",
+      `url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Lora:wght@400;700&display=swap")`,
     "@font-face": [
       {
         fontFamily: "Lora",
+      },
+      {
+        fontFamily: "Dosis",
       },
     ],
   },
@@ -22,6 +25,8 @@ export default {
     },
     fontFamily: {
       "lora": ['"Lora"', "serif"],
+      "dosis": ['"Dosis"', "sans-serif"],
+      "sans": ['"Dosis"', "sans-serif"],
     },
     colors: {
       green: "rgb(160,235,177)",
