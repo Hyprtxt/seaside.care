@@ -33,6 +33,7 @@ export default {
       blue: "rgb(0,190,211)",
       indigo: "rgb(0,153,212)",
       violet: "rgb(108, 73, 136)",
+      pink: "rgb(210,81,153)",
       grey: colors.coolGray,
       dark: "rgb(15,15,15)",
       transparent: "rgba(0,0,0,0)",
