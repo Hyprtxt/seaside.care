@@ -14,7 +14,7 @@ export default function Home() {
           <div class="border-4 border-pink border-dotted">
             <div class="border-4 border-pink p-8">
               <h2
-                class="font-lora font-bold uppercase relative mb-2"
+                class="font-lora font-bold uppercase relative mb-4"
                 style="font-size: 4.15rem; line-height: 0.7;"
               >
                 <span class="logo-gradient">Seaside</span>
@@ -22,11 +22,89 @@ export default function Home() {
                   Pharmacy
                 </span>
               </h2>
-              <a href="tel:781-284-6525">781-284-6525</a>
+              <a class="text-xl" href="tel:781-284-6525">781-284-6525</a>
+
+              <table class="mx-auto my-4 text-left">
+                <tbody class="hours-table">
+                  <tr class="">
+                    <th class="pr-3" scope="col">
+                      <p class="">
+                        Mon
+                      </p>
+                    </th>
+                    <td class="">
+                      9:00 AM - 7:00 PM
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <th class="pr-3" scope="col">
+                      <p class="">
+                        Tue
+                      </p>
+                    </th>
+                    <td class="">
+                      9:00 AM - 7:00 PM
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <th class="pr-3" scope="col">
+                      <p class="">
+                        Wed
+                      </p>
+                    </th>
+                    <td class="">
+                      9:00 AM - 7:00 PM
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <th class="pr-3" scope="col">
+                      <p class="">
+                        Thu
+                      </p>
+                    </th>
+                    <td class="">
+                      9:00 AM - 7:00 PM
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <th class="pr-3" scope="col">
+                      <p class="">
+                        Fri
+                      </p>
+                    </th>
+                    <td class="">
+                      9:00 AM - 7:00 PM
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <th class="pr-3" scope="col">
+                      <p class="">
+                        Sat
+                      </p>
+                    </th>
+                    <td class="">
+                      9:00 AM - 5:00 PM
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <th class="pr-3" scope="col">
+                      <p class="">
+                        Sun
+                      </p>
+                    </th>
+                    <td class="">
+                      Closed
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>
+                <a href="https://goo.gl/maps/ZuBSQdKqEavcKrgf9">
+                  Click here to visit us on Google Maps
+                </a>
+              </p>
               <p>Located in Revere, Massachusetts</p>
-              <a href="https://goo.gl/maps/ZuBSQdKqEavcKrgf9">
-                Click here to visit us on Google Maps
-              </a>
             </div>
             <div class="hidden">
               <Layout>
