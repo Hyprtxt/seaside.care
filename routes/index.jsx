@@ -1,6 +1,7 @@
 import { Head } from "$fresh/runtime.ts"
 // import { tw } from "twind"
 import Layout from "@/components/Layout.jsx"
+import IconPill from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/pill.tsx"
 
 export default function Home() {
   return (
@@ -22,9 +23,25 @@ export default function Home() {
                   Pharmacy
                 </span>
               </h2>
-              <a class="text-xl" href="tel:781-284-6525">781-284-6525</a>
+              <div class="mb-3">
+                <IconPill class="text-pink inline rotate-135" />
+                <IconPill class="text-blue inline rotate-90" />
+                <IconPill class="text-pink inline rotate-135" />
+                <IconPill class="text-blue inline rotate-90" />
+                <IconPill class="text-pink inline rotate-135" />
+                <IconPill class="text-blue inline rotate-90" />
+                <IconPill class="text-pink inline rotate-135" />
+                <IconPill class="text-blue inline rotate-90" />
+                <IconPill class="text-pink inline rotate-135" />
+                <IconPill class="text-blue inline rotate-90" />
+                <IconPill class="text-pink inline rotate-135" />
+                <IconPill class="text-blue inline rotate-90" />
+              </div>
+              <a class="text-xl" href="tel:781-284-6525">
+                781-284-6525
+              </a>
 
-              <table class="mx-auto my-4 text-left">
+              <table class="mx-auto my-4 text-left text-dark">
                 <tbody class="hours-table">
                   <tr class="">
                     <th class="pr-3" scope="col">
