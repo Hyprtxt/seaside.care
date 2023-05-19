@@ -10,7 +10,7 @@ export default function Home() {
         <title>Seaside Pharmacy</title>
       </Head>
 
-      <div class="mx-auto text-center max-w-sm my-5 bg-white border-blue border-dashed border-4">
+      <div class="mx-auto text-center max-w-sm my-5 bg-white border-blue border-dashed border-4 text-xl">
         <div class="border-4 border-pink">
           <div class="border-4 border-pink border-dotted">
             <div class="border-4 border-pink p-8">
@@ -37,10 +37,11 @@ export default function Home() {
                 <IconPill class="text-pink inline rotate-135" />
                 <IconPill class="text-blue inline rotate-90" />
               </div>
-              <a class="text-xl" href="tel:781-284-6525">
-                781-284-6525
-              </a>
-
+              <p class="text-2xl">
+                <a href="tel:781-284-6525">
+                  781-284-6525
+                </a>
+              </p>
               <table class="mx-auto my-4 text-left text-dark">
                 <tbody class="hours-table">
                   <tr class="">
