@@ -10,9 +10,9 @@ export default function Home() {
       </Head>
 
       <div class="mx-auto text-center max-w-sm my-5 bg-white border-blue border-dashed border-4">
-        <div class="border-4 border-lightPink">
-          <div class="border-4 border-lightPink border-dotted">
-            <div class="border-4 border-lightPink p-8">
+        <div class="border-4 border-pink">
+          <div class="border-4 border-pink border-dotted">
+            <div class="border-4 border-pink p-8">
               <h2
                 class="font-lora font-bold uppercase relative mb-2"
                 style="font-size: 4.15rem; line-height: 0.7;"
