@@ -8,7 +8,7 @@ export default function Home(props) {
         <title>Seaside Pharmacy | 404 Error Page</title>
       </Head>
       <Layout data={props}>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white">
+        <section class="max-w-screen-md mx-auto py-8 px(8) space-y-4 bg-white">
           <h2>
             404 Error
           </h2>

@@ -56,7 +56,7 @@ export const globalStyles = css({
       color: theme("colors.indigo"),
       "&:visited": apply`text-violet`,
       "&:hover": apply`text-blue underline`,
-      "&:active": apply`text-green`,
+      "&:active": apply`text-pink`,
     },
     "h1, h2, h3": {
       "&": apply`mb-3`,
@@ -91,7 +91,7 @@ const Layout = ({ children, data = {} }) => (
     </section>
     {DENO_ENV === "development"
       ? (
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white">
+        <section class="max-w-screen-md mx-auto py-8 px(8) space-y-4 bg-white">
           <pre>{JSON.stringify(data, null, 2 )}</pre>
         </section>
       )
