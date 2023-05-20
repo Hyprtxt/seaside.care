@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts"
 // import { tw } from "twind"
 import Layout from "@/components/Layout.jsx"
-import IconPill from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/pill.tsx"
+import IconPill from "$icons/pill.tsx"
 
 export default function Home() {
   return (
@@ -9,7 +9,6 @@ export default function Home() {
       <Head>
         <title>Seaside Pharmacy</title>
       </Head>
-
       <div class="mx-auto text-center max-w-sm my-5 bg-white border-blue border-dashed border-4 text-xl">
         <div class="border-4 border-pink">
           <div class="border-4 border-pink border-dotted">
