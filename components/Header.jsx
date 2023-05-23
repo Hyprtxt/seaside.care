@@ -1,5 +1,3 @@
-// import HyprtxtIcon from "@/components/HyprtxtIcon.jsx"
-
 export default function Header({ active }) {
   const menus = [
     { name: "Home", href: "/" },
@@ -10,7 +8,6 @@ export default function Header({ active }) {
   return (
     <header class="bg-white w-full max-w-screen-md py-6 px-8 flex flex-col md:flex-row gap-4 mt-4">
       <div class="flex items-center flex-1">
-        {/* <HyprtxtIcon /> */}
         <div class="text-2xl  ml-1 font-bold">
           Seaside Pharmacy
         </div>
