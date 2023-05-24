@@ -72,7 +72,7 @@ export const globalStyles = css({
       backgroundColor: theme("colors.blue"),
     },
     ".logo-gradient":
-      apply`bg-clip-text text-transparent bg-gradient-to-b from-indigo via-blue via-blue to-pink`,
+      apply`bg-clip-text text-transparent bg-gradient-to-b from-indigo via-blue via-blue to-morepink`,
   },
 })
 
