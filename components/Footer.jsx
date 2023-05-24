@@ -15,8 +15,7 @@ export default function Footer({ children, active, hits = 0 }) {
       children: [
         {
           name: "Facebook",
-          href:
-            "https://www.facebook.com/people/Seaside-Pharmacy/100070179091084",
+          href: "https://www.facebook.com/seaside.revere/",
         },
         {
           name: "Yelp",

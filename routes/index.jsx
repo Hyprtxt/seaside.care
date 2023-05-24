@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Seaside Pharmacy</title>
       </Head>
-      <div class="mx-auto text-center max-w-sm my-5 bg-white rounded-md border-pink border-4 text-xl  p-8">
+      <div class="mx-auto text-center max-w-sm my-5 bg-white rounded-lg border-pink border-4 text-xl  p-8">
         <h2
           class="font-lora font-bold uppercase relative mb-4"
           style="font-size: 4.15rem; line-height: 0.7;"

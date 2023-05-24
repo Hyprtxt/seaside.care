@@ -9,7 +9,7 @@ export default function Home(props) {
       </Head>
       <Layout data={props}>
         <section class="max-w-screen-md mx-auto py-8 px(8) space-y-4 bg-white">
-          <h2>
+          <h2 class="text-xl font-bold">
             404 Error
           </h2>
           <p>
